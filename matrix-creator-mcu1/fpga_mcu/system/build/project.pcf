@@ -1,0 +1,74 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Mar 14 12:44:27 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "P84" LEVEL 1;
+COMP "address<10>" LOCATE = SITE "P100" LEVEL 1;
+COMP "address<11>" LOCATE = SITE "P27" LEVEL 1;
+COMP "led" LOCATE = SITE "P39" LEVEL 1;
+COMP "address<12>" LOCATE = SITE "P26" LEVEL 1;
+COMP "address<13>" LOCATE = SITE "P24" LEVEL 1;
+COMP "data_bus<0>" LOCATE = SITE "P6" LEVEL 1;
+COMP "data_bus<1>" LOCATE = SITE "P117" LEVEL 1;
+COMP "data_bus<2>" LOCATE = SITE "P121" LEVEL 1;
+COMP "address<0>" LOCATE = SITE "P66" LEVEL 1;
+COMP "data_bus<3>" LOCATE = SITE "P124" LEVEL 1;
+COMP "address<1>" LOCATE = SITE "P62" LEVEL 1;
+COMP "data_bus<4>" LOCATE = SITE "P127" LEVEL 1;
+COMP "ncs" LOCATE = SITE "P8" LEVEL 1;
+COMP "address<2>" LOCATE = SITE "P61" LEVEL 1;
+COMP "data_bus<5>" LOCATE = SITE "P131" LEVEL 1;
+COMP "address<3>" LOCATE = SITE "P60" LEVEL 1;
+COMP "data_bus<6>" LOCATE = SITE "P132" LEVEL 1;
+COMP "address<4>" LOCATE = SITE "P57" LEVEL 1;
+COMP "data_bus<7>" LOCATE = SITE "P137" LEVEL 1;
+COMP "address<5>" LOCATE = SITE "P51" LEVEL 1;
+COMP "address<6>" LOCATE = SITE "P50" LEVEL 1;
+COMP "address<7>" LOCATE = SITE "P48" LEVEL 1;
+COMP "address<8>" LOCATE = SITE "P17" LEVEL 1;
+COMP "nrd" LOCATE = SITE "P87" LEVEL 1;
+COMP "address<9>" LOCATE = SITE "P14" LEVEL 1;
+COMP "nwe" LOCATE = SITE "P97" LEVEL 1;
+COMP "reset" LOCATE = SITE "P142" LEVEL 1;
+TIMEGRP clk_grp = BEL "snwe" BEL "buffer_address_0" BEL "buffer_address_1" BEL
+        "buffer_address_2" BEL "buffer_address_3" BEL "buffer_address_4" BEL
+        "buffer_address_5" BEL "buffer_address_6" BEL "buffer_address_7" BEL
+        "buffer_address_8" BEL "buffer_address_9" BEL "buffer_address_10" BEL
+        "buffer_address_11" BEL "buffer_address_12" BEL "sncs" BEL
+        "buffer_data_0" BEL "buffer_data_1" BEL "buffer_data_2" BEL
+        "buffer_data_3" BEL "buffer_data_4" BEL "buffer_data_5" BEL
+        "buffer_data_6" BEL "buffer_data_7" BEL "counter_0" BEL "counter_1"
+        BEL "counter_2" BEL "counter_3" BEL "counter_4" BEL "counter_5" BEL
+        "counter_6" BEL "counter_7" BEL "counter_8" BEL "counter_9" BEL
+        "counter_10" BEL "counter_11" BEL "counter_12" BEL "counter_13" BEL
+        "counter_14" BEL "counter_15" BEL "counter_16" BEL "counter_17" BEL
+        "counter_18" BEL "counter_19" BEL "counter_20" BEL "counter_21" BEL
+        "counter_22" BEL "counter_23" BEL "counter_24" BEL
+        "chip_select0/chip_select_7" BEL "chip_select0/chip_select_6" BEL
+        "chip_select0/chip_select_5" BEL "chip_select0/chip_select_4" BEL
+        "chip_select0/chip_select_3" BEL "chip_select0/chip_select_2" BEL
+        "chip_select0/chip_select_1" BEL "chip_select0/chip_select_0" BEL
+        "p_example0/data_out_7" BEL "p_example0/data_out_6" BEL
+        "p_example0/data_out_5" BEL "p_example0/data_out_4" BEL
+        "p_example0/data_out_3" BEL "p_example0/data_out_2" BEL
+        "p_example0/data_out_1" BEL "p_example0/data_out_0" BEL
+        "p_example0/data4_7" BEL "p_example0/data4_6" BEL "p_example0/data4_5"
+        BEL "p_example0/data4_4" BEL "p_example0/data4_3" BEL
+        "p_example0/data4_2" BEL "p_example0/data4_1" BEL "p_example0/data4_0"
+        BEL "p_example0/data3_7" BEL "p_example0/data3_6" BEL
+        "p_example0/data3_5" BEL "p_example0/data3_4" BEL "p_example0/data3_3"
+        BEL "p_example0/data3_2" BEL "p_example0/data3_1" BEL
+        "p_example0/data3_0" BEL "p_example0/data1_7" BEL "p_example0/data1_6"
+        BEL "p_example0/data1_5" BEL "p_example0/data1_4" BEL
+        "p_example0/data1_3" BEL "p_example0/data1_2" BEL "p_example0/data1_1"
+        BEL "p_example0/data1_0" BEL "p_example0/data2_7" BEL
+        "p_example0/data2_6" BEL "p_example0/data2_5" BEL "p_example0/data2_4"
+        BEL "p_example0/data2_3" BEL "p_example0/data2_2" BEL
+        "p_example0/data2_1" BEL "p_example0/data2_0" BEL "w_st" BEL "we" BEL
+        "clk_BUFGP/BUFG" BEL "rd_bus_7" BEL "rd_bus_6" BEL "rd_bus_5" BEL
+        "rd_bus_4" BEL "rd_bus_3" BEL "rd_bus_2" BEL "rd_bus_1" BEL "rd_bus_0"
+        BEL "counter_24_1";
+TS_PER_CLK = PERIOD TIMEGRP "clk_grp" 20 ns HIGH 50%;
+SCHEMATIC END;
+

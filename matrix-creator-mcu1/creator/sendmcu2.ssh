@@ -1,0 +1,1 @@
+scp build/ch.bin pi@10.42.0.172:/home/pi/

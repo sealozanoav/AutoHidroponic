@@ -1,0 +1,7 @@
+INFILE=/home/anderson/Escritorio/fpga_mcu/system/build/project_r.ncd
+OUTFILE=/home/anderson/Escritorio/fpga_mcu/system/build/project_r.bit
+FAMILY=Spartan6
+PART=xc6slx4-2tqg144
+WORKINGDIR=/home/anderson/Escritorio/fpga_mcu/system/build
+LICENSE=WebPack
+USER_INFO=211092072_0_0_316

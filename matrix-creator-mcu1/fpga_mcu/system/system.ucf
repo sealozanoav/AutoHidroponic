@@ -1,0 +1,43 @@
+NET clk TNM_NET = clk_grp;
+
+TIMESPEC TS_PER_CLK = PERIOD "clk_grp" 20.0 ns HIGH 50%;
+
+### System signals ###
+NET clk                         LOC = "P84";
+NET led                         LOC = "P39";
+NET reset                       LOC = "P142" | PULLDOWN;
+
+### Address Bus ###
+NET "address<13>"               LOC = "P24";
+NET "address<12>"               LOC = "P26";
+
+NET "address<11>"               LOC = "P27";
+NET "address<10>"               LOC = "P100";   #It is not routed in current PCB.
+NET "address<9>"                LOC = "P14";
+NET "address<8>"                LOC = "P17";
+
+NET "address<7>"                LOC = "P48";
+NET "address<6>"                LOC = "P50";
+NET "address<5>"                LOC = "P51";
+NET "address<4>"                LOC = "P57";
+
+NET "address<3>"                LOC = "P60";
+NET "address<2>"                LOC = "P61";
+NET "address<1>"                LOC = "P62";
+NET "address<0>"                LOC = "P66"; 
+
+### Data Bus ###
+NET "data_bus<7>"               LOC = "P137";
+NET "data_bus<6>"               LOC = "P132";
+NET "data_bus<5>"               LOC = "P131";
+NET "data_bus<4>"               LOC = "P127";
+NET "data_bus<3>"               LOC = "P124";
+NET "data_bus<2>"               LOC = "P121";
+NET "data_bus<1>"               LOC = "P117";
+NET "data_bus<0>"               LOC = "P6";
+
+### Control Bus ###
+NET "nwe"                       LOC = "P97";
+NET "nrd"                       LOC = "P87";
+NET "ncs"                       LOC = "P8";
+#NET "nwait"                     LOC = "P10";

@@ -1,0 +1,3 @@
+verilog work ../system.v
+verilog work .././rtl/chip_select/chip_select.v
+verilog work .././rtl/p_example/p_example.v
